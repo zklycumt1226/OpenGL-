@@ -22,6 +22,7 @@
     
     self.renderView = [[RenderView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:self.renderView];
+    //self.renderView.backgroundColor = [UIColor blueColor];
 }
 
 
