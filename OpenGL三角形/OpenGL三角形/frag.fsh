@@ -3,7 +3,11 @@
 
 //out vec4 color
 
+uniform sampler2D textureImg;
+varying lowp vec2 outTexCoord;
+
 void main(){
-    gl_FragColor = vec4(1.0,0.2,0.9,1.0);
-//    color = vec4(0.4,0.2,0.9,1.0);
+    
+    gl_FragColor = texture2D(textureImg,outTexCoord);
+//    gl_FragColor = vec4(1.0,0.0,0.0,1.0);
 }
